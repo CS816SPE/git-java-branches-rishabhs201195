@@ -12,7 +12,8 @@ char choice,ch;
 do{
 
   System.out.println("1. Add Two Numbers ");
-  System.out.println("2. Exit \n");
+  System.out.println("2.Multiply Two Numbers ");
+  System.out.println("3. Exit \n");
   System.out.println("Enter Your Choice : ");
   choice =sc.next().charAt(0);
   switch(choice){
@@ -23,8 +24,15 @@ do{
               res=a+b;
               System.out.print("Result = "+res);
               break;
+
+   case '2' : System.out.print("Enter Two Numbers : ");
+              a=sc.nextFloat();
+              b=sc.nextFloat();
+              res=a*b;
+              System.out.print("Result = "+res);
+              break;
   
-   case '2' :System.exit(0);
+   case '3' :System.exit(0);
              break;
 
    default :System.out.print("INVALID CHOICE !! ");
@@ -33,7 +41,7 @@ do{
 
 System.out.print("\n--------------------------------------------\n");
 
-}while(choice!=2);
+}while(choice!=3);
 
 
 }
